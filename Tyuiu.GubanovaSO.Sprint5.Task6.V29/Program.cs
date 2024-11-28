@@ -7,11 +7,7 @@ namespace Tyuiu.GubanovaSO.Sprint5.Task6.V29
         static void Main(string[] args)
         {
             DataService ds = new DataService();
-           
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* 2.12x^3 + 1.05x^2 + 4.1x * 2, x=2                                       *");
+
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Результат:                                                              *");
             Console.WriteLine("***************************************************************************");

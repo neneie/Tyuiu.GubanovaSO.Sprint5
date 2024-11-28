@@ -10,9 +10,10 @@ namespace Tyuiu.GubanovaSO.Sprint5.Task7.V5.Lib
             string text = File.ReadAllText(path);
             string newtext = "";
             Regex reg = new Regex("[A-Za-z]");
-            foreach (char c in text)
+            for (int i = 0; i < text.Length; i++)
             {
-                if (!reg.IsMatch(c.ToString())) newtext += c;
+                if (i < text.Length - 1 && reg.IsMatch(text[i + 1].ToString()) && text[i] == ' ') continue;
+                if (!reg.IsMatch(text[i].ToString())) newtext += text[i];
             }
             string newpath = Path.Combine(Path.GetTempPath(), "OutPutDataFileTask7V5.txt");
             File.WriteAllText(newpath, newtext);
